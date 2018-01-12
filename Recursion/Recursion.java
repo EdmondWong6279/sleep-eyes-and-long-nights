@@ -29,17 +29,12 @@ public class Recursion extends JPanel{
 		branch(length, g2d);
 	}
 
-	//Use translate instead
 	public void branch(int length, Graphics2D g2d){
 		g2d.drawLine(0, 0, 0, -length);
 		if(length>10) {
-			AffineTransform transform = g2d.getTransform();
-			length = (int) Math.round(length*0.67);
 			g2d.translate(0,-length);
 			g2d.rotate(angle);
-			branch(length, g2d);
-			g2d.setTransform(transform);
-			g2d.rotate(-2*angle);
+			length = (int) Math.round(length*0.67);
 			branch(length, g2d);
 		}
 	}
