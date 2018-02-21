@@ -12,9 +12,9 @@ public class Rover {
 	private int yCoords;
 	private int heading;
 
-	/** Constructor takes in the size of the plateau.
-	 *  The constructor will throw an exception if it is not initiated in
-	 *  a valid form.
+	/** Constructor takes in the intial position of the rover.
+	 *  The constructor will throw an exception if it is not
+	 *  initiated in a valid form.
 	 */
 	public Rover(int xCoords, int yCoords, char heading){
 		this.xCoords=xCoords;
@@ -29,7 +29,7 @@ public class Rover {
 		case 'W': this.heading = 3;
 		break;
 		default:
-			throw new IllegalArgumentException("Nah you need a valid heading fam.");
+			throw new IllegalArgumentException();
 		}
 	}
 
@@ -65,9 +65,9 @@ public class Rover {
 		this.xCoords=xCoords;
 	}
 
-	/** Setter for the x coordinates.
+	/** Setter for the y coordinates.
 	 * 
-	 *  @param xCoords
+	 *  @param yCoords
 	 */
 	public void setYCoords(int yCoords) {
 		this.yCoords=yCoords;

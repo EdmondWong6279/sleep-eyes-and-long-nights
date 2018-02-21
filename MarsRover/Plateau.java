@@ -46,7 +46,6 @@ public class Plateau {
 	public void explorePlateau() {
 		s = new Scanner(System.in);
 		// We loop here indefinitely so we can play around on our plateau for as long as we want until
-		// an invalid input is entered.
 		while (true) {
 			try{
 				System.out.println("Please enter the position and heading of a rover in the following format\n"+
@@ -150,8 +149,6 @@ public class Plateau {
 	}
 
 	/** The main method where the execution takes place.
-	 *  
-	 *  @param args
 	 */
 	public static void main(String[] args) {
 		Welcome();
