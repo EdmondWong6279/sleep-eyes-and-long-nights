@@ -1,2 +1,3 @@
 # sleep-eyes-and-long-nights
-Experimenting with Java along side my MSc CompSci
+
+Random stuff along side my MSc from Brum.
